@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+const proxy = require("http-proxy-middleware");
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -14,6 +15,8 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 app.use(routes);
+//use proxy to deploy locally comment out to deploy or when deployed to heroku
+app.use('/', proxy({target: 'localhost:3001', changeOrigin: true}));
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
