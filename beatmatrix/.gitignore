@@ -21,4 +21,7 @@ yarn-debug.log*
 yarn-error.log*
 .idea
 .idea/workspace.xml
-.DS_Store
+.DS_Store.idea
+node_modules library root
+node_modules
+.idea/
