@@ -63,6 +63,12 @@ class Books extends Component {
             </Jumbotron>
             <form>
               <Input
+                value={this.state.zipCode}
+                onChange={this.handleInputChange}
+                name="zipCode"
+                placeholder="Zip Code (required)"
+              />             
+              <Input
                 value={this.state.title}
                 onChange={this.handleInputChange}
                 name="title"
