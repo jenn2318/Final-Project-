@@ -9,6 +9,7 @@ import { Input, TextArea, FormBtn } from "../../components/Form";
 
 class Books extends Component {
   state = {
+    zipCode: "",
     books: [],
     title: "",
     author: "",
@@ -42,15 +43,22 @@ class Books extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (this.state.title && this.state.author) {
-      API.saveBook({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
-      })
-        .then(res => this.loadBooks())
-        .catch(err => console.log(err));
+    // if (this.state.title && this.state.author) {
+    //   API.saveBook({
+    //     title: this.state.title,
+    //     author: this.state.author,
+    //     synopsis: this.state.synopsis
+    //   })
+    //     .then(res => this.loadBooks())
+    //     .catch(err => console.log(err));
+    // }
+    if (this.state.zipCode !== "") {
+      API.getZipPlaces( this.state.zipCode)
+      .then(res => console.log(res.data.results))
+      .catch(err => console.log(err));
     }
+
+
   };
 
   render() {
@@ -87,7 +95,7 @@ class Books extends Component {
                 placeholder="Synopsis (Optional)"
               />
               <FormBtn
-                disabled={!(this.state.author && this.state.title)}
+                // disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
               >
                 Submit Book
