@@ -1,0 +1,33 @@
+.footer-bottom {
+    position: bottom;
+    background: purple;
+    height: 200px;
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 50px;
+    top:50px;
+
+}
+
+h4 {
+    color: orange;
+}
+
+
+h2 {
+    color: orange;
+}
+
+container-wrapper2 {
+    background-color: orange;
+}
+
+
+h5 {
+    color: orange;
+}
+
+h6 {
+    color: white;
+
+}
