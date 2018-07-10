@@ -6,6 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const proxy = require("http-proxy-middleware");
 
+Parking = require('./models/parking');
+
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -22,7 +24,7 @@ app.use('/', proxy({target: 'localhost:3001', changeOrigin: true}));
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist",
+  process.env.MONGODB_URI || "mongodb://localhost/parking",
   {
     useMongoClient: true
   }

@@ -1,3 +1,3 @@
 // module.exports = {
-//   Restaurant: require("./restaurant")
+//   Parking: require("./restaurant")
 // };

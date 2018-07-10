@@ -1,12 +1,12 @@
 // const router = require("express").Router();
 // const lastcallController = require("../../controllers/lastCallController");
 //
-// // Matches with "/api/restaurants"
+// // Matches with "/api/parking"
 // router.route("/")
-//   .get(Restaurants.findAll)
-//   .post(booksController.create);
+//   .get(Parking.findAll)
+//   .post(lastCallController.create);
 //
-// // Matches with "/api/restaurants/:id"
+// // Matches with "/api/parking/:id"
 // router
 //   .route("/:id")
 //   .get(lastCallController.findById)
