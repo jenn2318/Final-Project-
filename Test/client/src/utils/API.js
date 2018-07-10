@@ -8,11 +8,11 @@ export default {
   },
   // Gets parking by id
   getParkingById: function(id) {
-    return axios.get("/api/parking/" + id);
+    return axios.get("/api/parking/:_id");
   },
   // Deletes Parking
   deleteParking: function(id) {
-    return axios.delete("/api/parking/" + id);
+    return axios.delete("/api/parking/:_id");
   },
   // Saves a parking deck to the database
   saveParking: function(parkingData) {
