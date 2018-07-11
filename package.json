@@ -4,14 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "heroku-postbuild": "cd client && yarn install && yarn run build",
-    "server": "node server.js",
-    "client": "node scripts/start-client.js",
-    "start": "concurrently \"node server.js\" \"npm run client\"",
-    "build": "node scripts/build.js",
-    "seed": "node scripts/seedDB.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn"
+    "dev:client": "cd client && yarn start",
+    "dev:server": "nodemon server.js",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "postinstall": "cd client && yarn install && yarn run build",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
