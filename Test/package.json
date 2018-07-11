@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd client && yarn install && yarn run build",
     "server": "node server.js",
     "client": "node scripts/start-client.js",
     "start": "concurrently \"node server.js\" \"npm run client\"",
@@ -24,6 +24,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "http-proxy-middleware": "^0.18.0",
-    "mongoose": "^4.11.7"
+    "mongoose": "^4.11.7",
+    "ms": "^2.1.1"
   }
 }

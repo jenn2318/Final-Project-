@@ -3,6 +3,7 @@ const parkingSchema = mongoose.Schema;
 //
  const parkingSchema =  new Schema({
 //   title: { type: String, required: true },
+
      name: {
     type: String,
         required: true
@@ -16,7 +17,13 @@ const parkingSchema = mongoose.Schema;
 
      phone:{
      type: String,
-         required: true}
+         required: true},
+
+
+        rating: {
+         type: String,
+            required: true
+        },
 
 //   location: { type: String, required: true },
 //   rating: { type: String },

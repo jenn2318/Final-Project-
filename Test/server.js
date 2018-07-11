@@ -30,6 +30,11 @@ mongoose.connect(
   }
 );
 
+// app.get('/*', (req, res, next) => {
+//     res.sendFile(path.join(_ dirname, '..', 'client', 'build',
+//     'index.html'));
+// };
+
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
