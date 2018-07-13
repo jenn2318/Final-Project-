@@ -5,14 +5,22 @@ import API from '../utils/API.js';
 
 
 export default class LastCallEats extends Component {
+    state: {
+        dbParking: []
+
+    }
+
     getParkingINfo = () => {
-   API.getParking()
-.then(res =>
-     console.log(res.data),
-     console.log("line 10 LastCallEats.js")
-)
-.catch(err => console.log(err)) 
-}
+        API.getParking()
+        .then(res => {
+                console.log("line 16" + JSON.stringify(res.data)),
+                this.setState({dbParking: res.data}),
+                console.log("line 18" + JSON.stringify(this.state.dbParking)),
+                console.log("line 10 LastCallEats.js")
+            }
+        )
+        .catch(err => console.log(err)) 
+    }
     render() {
 
 
