@@ -1,3 +1,3 @@
-// module.exports = {
-//   Parking: require("./parking")
-// };
+module.exports = {
+  Parking: require("./parking")
+};

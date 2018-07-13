@@ -1,5 +1,5 @@
  const mongoose = require("mongoose");
-const parkingSchema = mongoose.Schema;
+const Schema = mongoose.Schema;
 //
  const parkingSchema =  new Schema({
 //   title: { type: String, required: true },
@@ -37,4 +37,4 @@ const parkingSchema = mongoose.Schema;
 //
  const lastCall = mongoose.model("Parking", parkingSchema);
 //
- module.exports = Parking;
+ module.exports = lastCall;

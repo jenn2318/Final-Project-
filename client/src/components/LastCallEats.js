@@ -1,12 +1,22 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import './LastCallEats.css';
-
+import API from '../utils/API.js';
 
 
 export default class LastCallEats extends Component {
-
+    getParkingINfo = () => {
+   API.getParking()
+.then(res =>
+     console.log(res.data),
+     console.log("line 10 LastCallEats.js")
+)
+.catch(err => console.log(err)) 
+}
     render() {
+
+
+
         return (
             <div>
             <Image src="assets/atl_ga.jpeg" className="header-image" />
@@ -15,6 +25,7 @@ export default class LastCallEats extends Component {
         <Row>
         <Col xs={12} sm={8} className="main-section">
             <p>Here are some great selections based on your favortie foods: Please choose some below</p>
+            <button onClick={this.getParkingINfo}> Function</button>
         </Col>
         <Col xs={12} sm={4} className="sidebar-section">
             <h2> LastCall Mission</h2>
