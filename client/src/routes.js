@@ -6,6 +6,7 @@ import Callback from './components/Callback';
 import Auth from './Auth/Auth';
 import About  from "./components/About";
 import history from './history';
+import LastCallEats from "./components/LastCallEats";
 
 const auth = new Auth();
 
@@ -23,6 +24,7 @@ export const makeMainRoutes = () => {
             {/*<Route path="/" render={(props) => <App auth={auth} {...props} />} />*/}
             <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
             <Route path="/about" render={(props) => <About auth={auth} {...props} />} />
+            <Route path="/LastCallEats" render={(props) => <LastCallEats auth={auth} {...props} />} />
             <Route path="/callback" render={(props) => {
                 handleAuthentication(props);
                 return <Callback {...props}/>
