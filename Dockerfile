@@ -1,19 +1,14 @@
-FROM node
 
-# Create app directory
-WORKDIR /usr/src/app
+FROM node:8.7-alpine
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-COPY package*.json ./
+WORKDIR /home/app
 
+RUN npm install -g create-react-app
+ADD package.json /home/app
 RUN npm install
+ADD . /home/app
 
-# Bundle app source
-COPY . .
+CMD ["npm", "start"]
 
-# Open the port where your server is running
-EXPOSE 3001
+EXPOSE 3000
 
-# Start your server
-CMD [ "npm", "start" ]
