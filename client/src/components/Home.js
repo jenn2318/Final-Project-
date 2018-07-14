@@ -18,7 +18,7 @@ export default class Home extends Component {
             <Grid>
             <Jumbotron>
             <h2>Welcome to LastCall</h2>
-        <p>This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
+        <p className="info-small">This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
 
                 {isAuthenticated()
             ? <Button bsStyle="primary" onClick={this.logout.bind(this)}>Logout</Button>
@@ -29,7 +29,7 @@ export default class Home extends Component {
             <Image src="assets/late_night_dt.jpeg" className="header-image" />
             <Row className="show-grid text-center">
             <Col sx={12} sm={4} className="container-wrapper">
-            <Image src="assets/burger_fries2.jpeg" circle className="profile-pic" />
+            <Image src="assets/burger.jpeg" circle className="profile-pic" />
             <h3>Buy Quick Bites</h3>
         <p>If you want more of an on the go quick meal to satisfy your hunger</p>
         </Col>

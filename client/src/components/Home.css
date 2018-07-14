@@ -22,6 +22,7 @@
 
 h3 {
     margin-bottom: 1em;
+    color: #229988;
 }
 
 body {
@@ -30,4 +31,8 @@ body {
 
 .box1 {
     background-color: black;
+}
+
+p {
+    color: darkgrey !important;
 }
