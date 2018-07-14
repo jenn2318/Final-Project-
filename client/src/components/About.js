@@ -3,11 +3,14 @@ import { Grid, Col, Image } from 'react-bootstrap';
 import './About.css';
 
 export default class About extends Component {
-
+    login() {
+        this.props.auth.login();
+    }
     render() {
+        const { isAuthenticated } = this.props.auth;
 
         return (
-
+            isAuthenticated() ?
             <div>
             ABOUT PAGE
         <Image src="assets/bar_night.jpeg" className="header-image" />
@@ -19,6 +22,7 @@ export default class About extends Component {
         </Col>
         </Grid>
         </div>
+                :null
 
     )
     }
