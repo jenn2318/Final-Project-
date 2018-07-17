@@ -15,6 +15,7 @@ export default class LastCallEats extends Component {
             isAuthenticated() ?
 
             <div>
+
             <Image src="assets/atl_ga.jpeg" className="header-image" />
             <Grid>
             <h2>Food Selections</h2>
@@ -30,8 +31,10 @@ export default class LastCallEats extends Component {
         </Grid>
         </div>
 
-        :null
+
+        : <div/>
         )
+
     }
 
 }
