@@ -14,9 +14,8 @@ export default class Home extends Component {
         const { isAuthenticated } = this.props.auth;
 
         return (
-
             <Grid>
-            <Jumbotron>
+         <Jumbotron>
             <h2>Welcome to LastCall</h2>
         <p className="info-small">This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
 
@@ -45,7 +44,6 @@ export default class Home extends Component {
         <p>Here you can choose lighter options that are small but pleasing</p>
         </Col>
         </Row>
-
         </Grid>
 
 

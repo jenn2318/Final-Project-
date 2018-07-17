@@ -1,12 +1,24 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Jumbotron, Button, Grid } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css';
 
 export default class CustomNavBar extends Component {
+    login() {
+        this.props.auth.login();
+    }
+    logout() {
+        this.props.auth.logout();
+
+    }
+    goTo(route) {
+        this.props.history.replace(`/${route}`)
+    }
     render () {
+        const { isAuthenticated } = this.props.auth;
 
         return (
+            <div>
             <Navbar default collapseOnSelect>
         <Navbar.Header>
         <Navbar.Brand>
@@ -16,18 +28,34 @@ export default class CustomNavBar extends Component {
             </Navbar.Header>
             <Navbar.Collapse>
             <Nav pullRight>
-        <NavItem eventKey={1}  componentClass={Link} href="/" to="/">
+        <NavItem eventKey={1}  onClick={this.goTo.bind(this, 'home')}>
             Home
             </NavItem>
-            <NavItem eventKey={2}  componentClass={Link} href="/About" to="/About">
+            <NavItem eventKey={2} onClick={this.goTo.bind(this, 'About')} >
             About
             </NavItem>
-            <NavItem eventKey={3}  componentClass={Link} href="/LastCallEats" to="/LastCallEats">
-            LastCallEats
-            </NavItem>
+            // <NavItem eventKey={3}  componentClass={Link} href="/LastCallEats" to="/LastCallEats">
+            //LastCallEats
+            // </NavItem>
             </Nav>
             </Navbar.Collapse>
             </Navbar>
+        {!isAuthenticated()
+               ? <Grid>
+            <Jumbotron>
+            <h2>Welcome to LastCall</h2>
+        <p className="info-small">This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
+
+        {!isAuthenticated()
+            ? <Button bsStyle="primary" onClick={this.login.bind(this)}>Login</Button>
+        : <Button bsStyle="primary" onClick={this.logout.bind(this)}>Logout</Button>}
+
+
+        </Jumbotron>
+
+            </Grid>
+            :null}
+            </div>
     )
     }
 }

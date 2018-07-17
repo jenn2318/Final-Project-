@@ -1,7 +1,7 @@
  const mongoose = require("mongoose");
-const parkingSchema = mongoose.Schema;
+const restaurantSchema = mongoose.Schema;
 //
- const parkingSchema =  new Schema({
+ const restaurantSchema =  new Schema({
 //   title: { type: String, required: true },
 
      name: {
@@ -35,6 +35,6 @@ const parkingSchema = mongoose.Schema;
 //
  });
 //
- const lastCall = mongoose.model("Parking", parkingSchema);
+ const lastCall = mongoose.model("Parking", restaurantSchema);
 //
- module.exports = Parking;
+ module.exports = Restaurant;
