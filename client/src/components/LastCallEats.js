@@ -5,9 +5,17 @@ import './LastCallEats.css';
 
 
 export default class LastCallEats extends Component {
-
+    login() {
+        this.props.auth.login();
+    }
     render() {
+        const { isAuthenticated } = this.props.auth;
+
         return (
+            isAuthenticated() ?
+    //
+    // render() {
+    //     return (
             <div>
             <Image src="assets/atl_ga.jpeg" className="header-image" />
             <Grid>
@@ -23,7 +31,7 @@ export default class LastCallEats extends Component {
         </Row>
         </Grid>
         </div>
-
+:null
     )
     }
 

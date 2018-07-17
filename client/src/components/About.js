@@ -11,6 +11,7 @@ export default class About extends Component {
 
         return (
             isAuthenticated() ?
+
             <div>
             ABOUT PAGE
         <Image src="assets/bar_night.jpeg" className="header-image" />
