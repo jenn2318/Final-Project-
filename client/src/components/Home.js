@@ -18,7 +18,7 @@ export default class Home extends Component {
             <Grid>
             <Jumbotron>
             <h2>Welcome to LastCall</h2>
-        <p>This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
+        <p className="info-small">This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
 
                 {isAuthenticated()
             ? <Button bsStyle="primary" onClick={this.logout.bind(this)}>Logout</Button>

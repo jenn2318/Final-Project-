@@ -6,7 +6,11 @@ import Callback from './components/Callback';
 import Auth from './Auth/Auth';
 import About  from "./components/About";
 import history from './history';
+
 import LastCallEats from "./components/LastCallEats";
+import CustomNavbar from './components/CustomNavbar';
+import Footer from './components/Footer';
+
 
 const auth = new Auth();
 
@@ -18,11 +22,12 @@ const handleAuthentication = (nextState, replace) => {
 
 export const makeMainRoutes = () => {
     return (
-        <Router history={history} component = {Home}>
-
+        <Router history={history} >
+        <div>
+        <CustomNavbar  />
         <div>
             {/*<Route path="/" render={(props) => <App auth={auth} {...props} />} />*/}
-            <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
+            <Route path="/" render={(props) => <Home auth={auth} {...props} />} />
             <Route path="/about" render={(props) => <About auth={auth} {...props} />} />
             <Route path="/LastCallEats" render={(props) => <LastCallEats auth={auth} {...props} />} />
             <Route path="/callback" render={(props) => {
@@ -30,6 +35,8 @@ export const makeMainRoutes = () => {
                 return <Callback {...props}/>
 
             }}/>
+        </div>
+    <Footer   />
         </div>
     </Router>
 );
