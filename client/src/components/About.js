@@ -13,7 +13,7 @@ export default class About extends Component {
             isAuthenticated() ?
 
             <div>
-            ABOUT PAGE
+
         <Image src="assets/bar_night.jpeg" className="header-image" />
             <Grid>
             <Col  xs={12} sm={8} smOffest={2}>

@@ -34,9 +34,8 @@ export default class CustomNavBar extends Component {
             <NavItem eventKey={2} onClick={this.goTo.bind(this, 'About')} >
             About
             </NavItem>
-            // <NavItem eventKey={3}  componentClass={Link} href="/LastCallEats" to="/LastCallEats">
-            //LastCallEats
-            // </NavItem>
+            <NavItem eventKey={2} onClick={this.goTo.bind(this, 'LastCallEats')} >LastCallEats
+        </NavItem>
             </Nav>
             </Navbar.Collapse>
             </Navbar>
