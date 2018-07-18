@@ -17,7 +17,7 @@ export default class Auth {
         this.auth0.authorize();
     }
 
-    Constructor() {
+    constructor() {
         this.login = this.login.bind(this);
         this.logout = this.logout.bind(this);
         this.handleAuthentication = this.handleAuthentication.bind(this);
@@ -30,7 +30,7 @@ export default class Auth {
             this.setSession(authResult);
             history.replace('/home');
         } else if (err) {
-            history.replace('/home');
+            history.replace('/');
             console.log(err);
         }
     });
@@ -52,7 +52,7 @@ export default class Auth {
         localStorage.removeItem('id_token');
         localStorage.removeItem('expires_at');
         // navigate to the home route
-        history.replace('/home');
+        history.replace('/');
     }
 
     isAuthenticated() {

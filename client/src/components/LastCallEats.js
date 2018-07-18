@@ -79,12 +79,18 @@ export default class LastCallEats extends Component {
         .catch(err => console.log(err));
     }
 }
+
+    login() {
+        this.props.auth.login();
+    }
     render() {
-
-
+        const { isAuthenticated } = this.props.auth;
 
         return (
+            isAuthenticated() ?
+
             <div>
+
             <Image src="assets/atl_ga.jpeg" className="header-image" />
             <Grid>
             <h2>Food Selections</h2>
@@ -148,7 +154,10 @@ export default class LastCallEats extends Component {
         </Grid>
         </div>
 
-    )
+
+        : <div/>
+        )
+
     }
 
 }

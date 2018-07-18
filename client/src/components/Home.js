@@ -4,17 +4,25 @@ import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
 import './Home.css';
 
 export default class Home extends Component {
-
+    login() {
+        this.props.auth.login();
+    }
+        logout() {
+        this.props.auth.logout();
+    }
     render() {
-        return (
+        const { isAuthenticated } = this.props.auth;
 
+        return (
             <Grid>
-            <Jumbotron>
+         <Jumbotron>
             <h2>Welcome to LastCall</h2>
-        <p>This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
-        <Link to="/about">
-            <Button bsStyle="primary">Login</Button>
-            </Link>
+        <p className="info-small">This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
+
+                {isAuthenticated()
+            ? <Button bsStyle="primary" onClick={this.logout.bind(this)}>Logout</Button>
+            : <Button bsStyle="primary" onClick={this.login.bind(this)}>Login</Button>}
+
 
             </Jumbotron>
             <Image src="assets/late_night_dt.jpeg" className="header-image" />
@@ -36,10 +44,11 @@ export default class Home extends Component {
         <p>Here you can choose lighter options that are small but pleasing</p>
         </Col>
         </Row>
-
         </Grid>
 
-    )
+
+
+        )
 
     }
 
