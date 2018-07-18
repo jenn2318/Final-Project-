@@ -3,11 +3,11 @@ import configkeys from "../config.js"
 
 const milestone1ZipCodeURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=";
 // Import from .env file
-// const zipcodeAPIkey = "&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8";
+
 
 const getPlaceHours = "https://maps.googleapis.com/maps/api/place/details/json?placeid=";
 
-
+const geolocate = "https://www.googleapis.com/geolocation/v1/geolocate?key=";
 
 export default {
  //Parking deck information
@@ -36,8 +36,8 @@ export default {
   getPlaceHours: function(placeid) {
     return axios.get(getPlaceHours+placeid+configkeys.zipcodeAPIkey+"&fields=name,opening_hours");
   },
-  getCordinates: function(zipcode) {
-    return axios.get("/mygeocoder/" +zipcode)
+  getCordinates: function() {
+    return axios.post(geolocate+configkeys.googlePlaces)
   }
 };
 
