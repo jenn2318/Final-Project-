@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const lastCallController = require("../../controllers/lastCallController");
+const lastCallController = require("../../controllers/lastCallController.js");
 
 // Matches with "/api/parking"
 router.route("/")
