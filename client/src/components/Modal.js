@@ -1,4 +1,10 @@
-// class Trigger extends React.Component {
+// import React, { Component } from 'react'
+// import { Button, Modal as Mod } from 'react-bootstrap';
+// import './Modal.css';
+//
+//
+//
+// export default class Modal extends React.Component {
 //     constructor(props, context) {
 //         super(props, context);
 //
@@ -20,32 +26,31 @@
 //         bsSize="large"
 //         onClick={() => this.setState({ show: true })}
 //     >
-//         Launch contained modal
+//         Test Modal
 //         </Button>
-//
-//         <Modal
+//         <Mod
 //         show={this.state.show}
 //         onHide={this.handleHide}
 //         container={this}
 //         aria-labelledby="contained-modal-title"
 //             >
-//             <Modal.Header closeButton>
-//         <Modal.Title id="contained-modal-title">
+//             <Mod.Header closeButton>
+//         <Mod.Title id="contained-modal-title">
 //             Contained Modal
-//         </Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
+//         </Mod.Title>
+//         </Mod.Header>
+//         <Mod.Body>
 //         Please Enter Your Zipcode To Search Late Night Eats
-//         </Modal.Body>
-//         <Modal.Footer>
+//         </Mod.Body>
+//         <Mod.Footer>
 //         <Button onClick={this.handleHide}>Close</Button>
-//         </Modal.Footer>
-//         </Modal>
+//         </Mod.Footer>
+//         </Mod>
 //         </div>
 //
 //
-//     );
+//        );
 //     }
 // }
-
-//render(<Trigger />);
+//
+//

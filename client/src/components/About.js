@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Col, Image } from 'react-bootstrap';
 import './About.css';
+import  Modal  from './components/Modal';
 
 export default class About extends Component {
     login() {
@@ -14,7 +15,7 @@ export default class About extends Component {
 
             <div>
 
-        <Image src="assets/bar_night.jpeg" className="header-image" />
+
             <Grid>
             <Col  xs={12} sm={8} smOffest={2}>
             <Image src="assets/restaurant_late.jpg" className="about-late-night" rounded />
