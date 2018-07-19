@@ -15,7 +15,9 @@ export default class LastCallEats extends Component {
         synopsis: "",
         isMarkerShown: true,
         zipResults: [],
-        showMapWithMarkers: false
+        showMapWithMarkers: false,
+        lat: "",
+        lng: ""
 
     }
 
@@ -31,7 +33,19 @@ export default class LastCallEats extends Component {
         .catch(err => console.log(err)) 
     }
     componentDidMount() {
-    this.delayedShowMarker()
+    this.delayedShowMarker(),
+    API.getCordinates()
+    .then(res => {
+      console.log(res.data.location.lat),
+      this.setState({lat: res.data.location.lat}),
+      console.log("LastCallEats state at lat: "+ this.state.lat),
+
+      console.log(res.data.location.lng),
+      this.setState({lng: res.data.location.lng}),
+      console.log("LastCallEats state at lng: "+ this.state.lng),
+
+      console.log(res)
+    })
   }
 
   delayedShowMarker = () => {
@@ -137,9 +151,13 @@ export default class LastCallEats extends Component {
             ?
             <GoogleMap
             isMarkerShown={this.state.isMarkerShown}
-            centerLat={ this.state.zipResults[2].geometry.location.lat }
-            centerLong={this.state.zipResults[2].geometry.location.lng }
+            centerLat={ this.state.lat }
+            centerLong={this.state.lng }
             >
+            <Marker 
+              position={{ lat: this.state.lat, lng: this.state.lng }} 
+              onClick={console.log("this is the center")} 
+            />
 
             ({this.state.zipResults.map(oneZipAtATime => 
             <Marker 
