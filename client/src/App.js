@@ -53,7 +53,7 @@
 
 import React, { Component } from 'react';
 // import './App.css';
-// import Social from './components/Social';
+
 
 class App extends Component {
     goTo(route) {

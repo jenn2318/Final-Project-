@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button, ButtonGroup, ButtonToolbar } from 'react-bootstrap';
 import './Home.css';
-// import Social from './components/Social';
+ import Social from './Social';
 
 export default class Home extends Component {
     login() {
@@ -59,6 +59,7 @@ export default class Home extends Component {
         <p>Here you can choose lighter options that are small but pleasing</p>
         </Col>
         </Row>
+
         </Grid>
 
 

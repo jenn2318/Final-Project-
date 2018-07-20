@@ -3,6 +3,8 @@ import { Navbar, Nav, NavItem, Jumbotron, Button, Grid } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css';
 
+
+
 export default class CustomNavBar extends Component {
     login() {
         this.props.auth.login();

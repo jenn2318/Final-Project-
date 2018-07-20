@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {  Row, Col, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import { SocialIcon } from 'react-social-icons';
+
 
 export default class Footer extends Component {
     render() {
@@ -19,8 +21,8 @@ export default class Footer extends Component {
         <Col sx={12} sm={4} className="container-wrapper2">
             <h5>Follow Us On Social Media</h5>
         <h6>Facebook</h6>
-        <h6>Instagram</h6>
-        <h6>Twitter</h6>
+        <h6>Instagram < SocialIcon url="https://www.instagram.com/lastcalleatsatl/" /></h6>
+        <h6>Twitter  <SocialIcon url="https://twitter.com/JPCoder777" /></h6>
         </Col>
 
         <Col sx={12} sm={4} className="container-wrapper2">
