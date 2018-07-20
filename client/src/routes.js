@@ -22,7 +22,7 @@ const handleAuthentication = (nextState, replace) => {
 
 export const makeMainRoutes = () => {
     return (
-        <Router history={history} Component={CustomNavbar}>
+        <Router history={history} component={CustomNavbar}>
         <div>
         <div>
             {/*<Route path="/" render={(props) => <App auth={auth} {...props} />} />*/}
