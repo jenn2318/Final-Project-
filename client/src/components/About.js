@@ -15,29 +15,31 @@ export default class About extends Component {
 
             <div>
             <Grid>
-            <Col  xs={12} sm={8} smOffest={2}>
+            <Col  xs={8} sm={8} smOffest={2}>
             <Modal />
             <Image src="assets/michelle_about.jpeg" circle className="profile-pic" />
             <div>
-            <h4>Profile Information</h4>
+            <h4>Profile Information:</h4>
 
             <p>Email: michelle@gmail.com</p>
             <p>Phone: 415-546-0000</p>
 
-            <h4>Location Favorites</h4>
+            <h4>Location Favorites:</h4>
             <ul>
             <li>Midtown</li>
             <li>SandySprings</li>
             <li>Brookhaven</li>
             </ul>
 
-            <h4>Restaurant Frequency Points</h4>
+            <h4>Restaurant Frequency Points:</h4>
             <ul>
             <li>Quick Bites: 25</li>
             <li>Gourmet Meals: 78</li>
             <li>Tapas Restaurants: 100</li>
             </ul>
 
+
+            <h3>My Favorites List</h3>
 
             <Panel id="collapsible-panel-example-3" defaultExpanded>
         <Panel.Heading>

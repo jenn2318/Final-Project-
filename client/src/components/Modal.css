@@ -4,3 +4,10 @@
 /*.modal-container .modal, .modal-container .modal-backdrop {*/
 /*position: absolute;*/
 /*}*/
+
+.modal-container {
+    background-color: #229988 !important;
+width: 10px;
+    margin-bottom: 20px;
+
+}
