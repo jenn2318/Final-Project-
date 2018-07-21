@@ -74,18 +74,19 @@ export default class LastCallEats extends Component {
 
     if (this.state.zipCode !== "") {
       console.log(this.state.zipCode);
-      API.getZipPlaces( this.state.zipCode)
+      API.getZipPlaces( )
       .then(res => 
-          {this.setState({
-            zipResults: res.data.results,
-            showMapWithMarkers: true
-          })
-          console.log(this.state.zipResults);
+      { (this.setState({zipResults:res.data.results}))
+
+
+          console.log("state zip places: "),
+
+          console.log(this.state.zipResults)}
           // API.getPlaceHours("4f91a98b982a0766bd6b42c23a0dabc7e631c437")
           // .then(res =>console.log(res))
           // .catch(err => console.log(err));
 
-        }
+
       ) 
       .catch(err => console.log(err));
 
@@ -144,18 +145,27 @@ export default class LastCallEats extends Component {
             centerLat={ this.state.lat }
             centerLong={this.state.lng }
             >
+
+                {/*//dom*/}
             <Marker 
               position={{ lat: this.state.lat, lng: this.state.lng }} 
               onClick={console.log("this is the center")} 
             />
+                {/*<Marker*/}
+                    {/*position={{ lat: this.state.results, lng: this.state.lng }}*/}
+                    {/*onClick={console.log("this displays zip results ")}*/}
+                {/*/>*/}
 
-            ({this.state.zipResults.map(oneZipAtATime => 
-            <Marker 
-              position={{ lat: oneZipAtATime.geometry.location.lat, lng: oneZipAtATime.geometry.location.lng }} 
-              onClick={this.handleMarkerClick} 
-            />
+
+            ({this.state.zipResults.map(oneZipAtATime =>
+
+            <Marker
+                position={{ lat: oneZipAtATime.geometry.zipResults.location.lat, lng: oneZipAtATime.geometry.location.lng }}
+                onClick={this.handleMarkerClick}
+                />
               )})
             </GoogleMap>
+
             : null}
         </Col>
         </Row>

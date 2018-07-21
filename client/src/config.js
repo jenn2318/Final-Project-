@@ -7,6 +7,7 @@ var config = {
 */
 
 module.exports = {
-"zipcodeAPIkey" : "&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8",
+"zipcodeAPIkey" : "AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8",
 "googlePlaces" : "AIzaSyBl5Hi1424yDj2kwHMl2NoqvrONH6nT_1I"
 }
+
