@@ -11,6 +11,7 @@ export default class LastCallEats extends Component {
         address: "",
         phone: "",
         rating: "",
+        zipCode: "",
         isMarkerShown: true,
         zipResults: [],
         showMapWithMarkers: false,
@@ -76,10 +77,10 @@ export default class LastCallEats extends Component {
       console.log(this.state.zipCode);
       API.getZipPlaces( )
       .then(res => 
-      { (this.setState({zipResults:res.data.results}))
+      { this.setState({zipResults:res.data.results,showMapWithMarkers:true})
 
 
-          console.log("state zip places: "),
+          console.log("state zip places: ")
 
           console.log(this.state.zipResults)}
           // API.getPlaceHours("4f91a98b982a0766bd6b42c23a0dabc7e631c437")
@@ -88,11 +89,8 @@ export default class LastCallEats extends Component {
 
 
       ) 
-      .catch(err => console.log(err));
+      .catch(err => console.log(err))
 
-            API.getCordinates(this.state.zipCode)
-        .then(res =>console.log(res))
-        .catch(err => console.log(err));
     }
 }
 
@@ -138,7 +136,7 @@ export default class LastCallEats extends Component {
         <Col xs={12} sm={4} className="sidebar-section">
             <h2> LastCall Mission</h2>
         <p> Here is why we want to be your number one late night food app in Atlanta. We offer selections without you having to search high and low. We provide selections that are highly rated and we offer our members the best quality.</p>
-        {this.state.showMapWithMarkers === true
+        {this.state.showMapWithMarkers
             ?
             <GoogleMap
             isMarkerShown={this.state.isMarkerShown}
@@ -160,7 +158,7 @@ export default class LastCallEats extends Component {
             ({this.state.zipResults.map(oneZipAtATime =>
 
             <Marker
-                position={{ lat: oneZipAtATime.geometry.zipResults.location.lat, lng: oneZipAtATime.geometry.location.lng }}
+                position={{ lat: oneZipAtATime.geometry.location.lat, lng: oneZipAtATime.geometry.location.lng }}
                 onClick={this.handleMarkerClick}
                 />
               )})
