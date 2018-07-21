@@ -9,10 +9,6 @@ export default class LastCallEats extends Component {
     state= {
         dbParking: [],
         zipCode: "",
-        books: [],
-        title: "",
-        author: "",
-        synopsis: "",
         isMarkerShown: true,
         zipResults: [],
         showMapWithMarkers: false,
@@ -88,9 +84,7 @@ export default class LastCallEats extends Component {
                         showMapWithMarkers: true
                     })
                         console.log(this.state.zipResults);
-                        // API.getPlaceHours("4f91a98b982a0766bd6b42c23a0dabc7e631c437")
-                        // .then(res =>console.log(res))
-                        // .catch(err => console.log(err));
+
 
                     }
                 )
@@ -123,12 +117,6 @@ export default class LastCallEats extends Component {
                                     placeholder="Zip Code (required)"
                                 />
 
-                                {/*< TextArea
-              //   value={this.state.synopsis}
-              //   onChange={this.handleInputChange}
-              //   name="synopsis"
-              //   placeholder="Synopsis (Optional)"
-              // />*/}
                                 <button className={"submit-last"}
                                     onClick={this.handleFormSubmit}
                                 >
