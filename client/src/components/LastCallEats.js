@@ -92,7 +92,7 @@ export default class LastCallEats extends Component {
                         <Col xs={12} sm={8} className="main-section">
                             <p>Here are some great selections based on your favortie foods: Please choose some below</p>
                             <form>
-                                <input
+                                <input className={"input-field"}
                                     value={this.state.zipCode}
                                     onChange={this.handleInputChange}
                                     name="zipCode"
