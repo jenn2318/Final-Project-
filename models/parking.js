@@ -1,6 +1,6 @@
  const mongoose = require("mongoose");
 
-const restaurantSchema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 //
  const restaurantSchema =  new Schema({
@@ -16,11 +16,10 @@ const restaurantSchema = mongoose.Schema;
          required: true
      },
 
-
      phone:{
-     type: String,
-         required: true},
-
+         type: String,
+         required: true
+     },
 
         rating: {
          type: String,
@@ -37,7 +36,7 @@ const restaurantSchema = mongoose.Schema;
 //
  });
 //
- const lastCall = mongoose.model("Parking", restaurantSchema);
+ const lastCall = mongoose.model("Restaurant", restaurantSchema);
 //
 
  module.exports = lastCall;

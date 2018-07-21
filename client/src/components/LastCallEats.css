@@ -2,3 +2,12 @@
     width: 100%;
     margin-bottom: 2em;
 }
+
+.submit-last {
+    background-color: purple !important;
+    color: orange !important;
+}
+
+.input-field {
+    background-color: purple !important;
+}

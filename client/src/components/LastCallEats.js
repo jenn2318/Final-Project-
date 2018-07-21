@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Row, Col, Image, Container, TextArea, FormBtn  } from 'react-bootstrap';
+import { Grid, Row, Col, Image, Container, TextArea, FormBtn, Button  } from 'react-bootstrap';
 import './LastCallEats.css';
 import API from "../utils/API";
 import  GoogleMap  from "./MapsComponents";
@@ -7,12 +7,10 @@ import { Marker } from "react-google-maps";
 
 export default class LastCallEats extends Component {
     state= {
-        dbParking: [],
-        zipCode: "",
-        books: [],
-        title: "",
-        author: "",
-        synopsis: "",
+        dbRestaurant: [],
+        address: "",
+        phone: "",
+        rating: "",
         isMarkerShown: true,
         zipResults: [],
         showMapWithMarkers: false,
@@ -21,12 +19,12 @@ export default class LastCallEats extends Component {
 
     }
 
-    getParkingINfo = () => {
-        API.getParking()
+    getRestaurantInfo = () => {
+        API.getRestaurant()
         .then(res => {
                 console.log("line 16" + JSON.stringify(res.data)),
-                this.setState({dbParking: res.data}),
-                console.log("line 18" + JSON.stringify(this.state.dbParking)),
+                this.setState({dbRestaurant: res.data}),
+                console.log("line 18" + JSON.stringify(this.state.dbRestaurant)),
                 console.log("line 10 LastCallEats.js")
             }
         )
@@ -46,6 +44,8 @@ export default class LastCallEats extends Component {
 
       console.log(res)
     })
+
+
   }
 
   delayedShowMarker = () => {
@@ -88,7 +88,8 @@ export default class LastCallEats extends Component {
         }
       ) 
       .catch(err => console.log(err));
-        API.getCordinates(this.state.zipCode)
+
+            API.getCordinates(this.state.zipCode)
         .then(res =>console.log(res))
         .catch(err => console.log(err));
     }
@@ -112,37 +113,26 @@ export default class LastCallEats extends Component {
         <Col xs={12} sm={8} className="main-section">
             <p>Please enter your zipcode below</p>
             <form>
-              <input
+              <input className="input-field"
                 value={this.state.zipCode}
                 onChange={this.handleInputChange}
                 name="zipCode"
                 placeholder="Zip Code (required)"
               />             
-              <input
-                value={this.state.title}
-                onChange={this.handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-              />
-              <input
-                value={this.state.author}
-                onChange={this.handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-              />
+
                {/*< TextArea
               //   value={this.state.synopsis}
               //   onChange={this.handleInputChange}
               //   name="synopsis"
               //   placeholder="Synopsis (Optional)"
               // />*/}
-              <button
+              <button className="submit-last"
                 onClick={this.handleFormSubmit}
+
               >
                 Search Zipcode
               </button>
               </form>
-            <button onClick={this.getParkingINfo}> Parking Info From db</button>
         </Col>
         <Col xs={12} sm={4} className="sidebar-section">
             <h2> LastCall Mission</h2>
