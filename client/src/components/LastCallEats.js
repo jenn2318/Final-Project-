@@ -107,10 +107,10 @@ export default class LastCallEats extends Component {
 
             <Image src="assets/atl_ga.jpeg" className="header-image" />
             <Grid>
-            <h2>Food Selections</h2>
+            <h2>Restaurant Locations</h2>
         <Row>
         <Col xs={12} sm={8} className="main-section">
-            <p>Here are some great selections based on your favortie foods: Please choose some below</p>
+            <p>Please enter your zipcode below</p>
             <form>
               <input
                 value={this.state.zipCode}
@@ -146,7 +146,7 @@ export default class LastCallEats extends Component {
         </Col>
         <Col xs={12} sm={4} className="sidebar-section">
             <h2> LastCall Mission</h2>
-        <p> Here is why we want to be your number one late night food app in Atlanta. We offer selections without you having to search high and low.</p>
+        <p> Here is why we want to be your number one late night food app in Atlanta. We offer selections without you having to search high and low. We provide selections that are highly rated and we offer our members the best quality.</p>
         {this.state.showMapWithMarkers === true
             ?
             <GoogleMap

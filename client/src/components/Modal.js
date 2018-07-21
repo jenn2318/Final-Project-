@@ -26,7 +26,7 @@ export default class Modal extends React.Component {
         bsSize="large"
         onClick={() => this.setState({ show: true })}
     >
-        Test Modal
+        About Us
         </Button>
         <Mod
         show={this.state.show}
@@ -36,11 +36,11 @@ export default class Modal extends React.Component {
             >
             <Mod.Header closeButton>
         <Mod.Title id="contained-modal-title">
-            Contained Modal
+            What is LastCall
         </Mod.Title>
         </Mod.Header>
         <Mod.Body>
-        Please Enter Your Zipcode To Search Late Night Eats
+        <p>LastCall Eats was created for consumers that often attend late night events but have quite an appetite when the night is over. Whether its a sporting event, concert or a late night at a bar or club we offer late night restaurant selections based on your location so you can find restaurants near you. We offer options that may be fast food, gourmet and tapas style restuarants.</p>
         </Mod.Body>
         <Mod.Footer>
         <Button onClick={this.handleHide}>Close</Button>

@@ -20,8 +20,8 @@ export default class About extends Component {
             <Col  xs={12} sm={8} smOffest={2}>
             <Modal />
             <Image src="assets/restaurant_late.jpg" className="about-late-night" rounded />
-        <h3>Select Your Zipcode</h3>
-        <p>We offer selections in restaurants and bars</p>
+        <h3>Contact Us</h3>
+        <p>Have questions or comments regarding your account?</p>
         </Col>
         </Grid>
 

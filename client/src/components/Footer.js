@@ -20,7 +20,6 @@ export default class Footer extends Component {
         </Col>
         <Col sx={12} sm={4} className="container-wrapper2">
             <h5>Follow Us On Social Media</h5>
-        <h6>Facebook</h6>
         <h6>Instagram < SocialIcon url="https://www.instagram.com/lastcalleatsatl/" /></h6>
         <h6>Twitter  <SocialIcon url="https://twitter.com/JPCoder777" /></h6>
         </Col>
