@@ -20,7 +20,8 @@ export default class Modal extends React.Component {
     }
     render() {
         return (
-            <div className="modal-container" style={{ height: 200 }}>
+            <div className="modal-container" style={{ height: 20
+        }}>
     <Button
         bsStyle="primary"
         bsSize="large"
