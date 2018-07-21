@@ -15,7 +15,9 @@ export default class LastCallEats extends Component {
         synopsis: "",
         isMarkerShown: true,
         zipResults: [],
-        showMapWithMarkers: false
+        showMapWithMarkers: false,
+        centerLat:"",
+        centerLng:""
 
     }
 
@@ -31,10 +33,29 @@ export default class LastCallEats extends Component {
             .catch(err => console.log(err))
     }
     componentDidMount() {
-        this.delayedShowMarker()
+        API.getZipPlaces( this.state.zipCode)
+            .then(res =>
+                {this.setState({
+                    zipResults: res.data.results,
+                    showMapWithMarkers: true
+                })
+                    console.log(this.state.zipResults);
+                    // API.getPlaceHours("4f91a98b982a0766bd6b42c23a0dabc7e631c437")
+                    // .then(res =>console.log(res))
+                    // .catch(err => console.log(err));
+
+                }
+            )
+            .catch(err => console.log(err));
+        API.getCordinates()
+            .then(res =>{
+                console.log(res)
+                this.setState({centerLat:res.data.location.lat,centerLng:res.data.location.lng})
+            })
+            .catch(err => console.log(err));
     }
 
-    delayedShowMarker = () => {
+/*delayedShowMarker = () => {
         setTimeout(() => {
             this.setState({ isMarkerShown: true })
         }, 3000)
@@ -43,7 +64,7 @@ export default class LastCallEats extends Component {
     handleMarkerClick = () => {
         this.setState({ isMarkerShown: false })
         this.delayedShowMarker()
-    }
+    } */
 
     handleInputChange = event => {
         const { name, value } = event.target;
@@ -74,8 +95,11 @@ export default class LastCallEats extends Component {
                     }
                 )
                 .catch(err => console.log(err));
-            API.getCordinates(this.state.zipCode)
-                .then(res =>console.log(res))
+            API.getCordinates()
+                .then(res =>{
+                    console.log(res)
+                    this.setState({centerLat:res.data.location.lat,centerLng:res.data.location.lng})
+                })
                 .catch(err => console.log(err));
         }
     }
@@ -120,10 +144,14 @@ export default class LastCallEats extends Component {
                                 ?
                                 <GoogleMap
                                     isMarkerShown={this.state.isMarkerShown}
-                                    centerLat={ this.state.zipResults[2].geometry.location.lat }
-                                    centerLong={this.state.zipResults[2].geometry.location.lng }
+                                    centerLat={ this.state.centerLat }
+                                    centerLong={this.state.centerLng }
                                 >
 
+                                    <Marker
+                                        position={{lat:this.state.centerLat,lng:this.state.centerLng}}
+                                        color={"blue"}
+                                        />
                                     ({this.state.zipResults.map(oneZipAtATime =>
                                     <Marker
                                         position={{ lat: oneZipAtATime.geometry.location.lat, lng: oneZipAtATime.geometry.location.lng }}
