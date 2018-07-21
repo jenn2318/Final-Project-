@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ea044fe-7e67-472e-9dd3-eff3504af5f7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LastCallEats.js" afterPath="$PROJECT_DIR$/client/src/components/LastCallEats.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MapsComponents.js" afterPath="$PROJECT_DIR$/client/src/components/MapsComponents.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/config.js" afterPath="$PROJECT_DIR$/client/src/config.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/API.js" afterPath="$PROJECT_DIR$/client/src/utils/API.js" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -71,8 +65,8 @@
       <file leaf-file-name="LastCallEats.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/components/LastCallEats.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="120" column="29" lean-forward="true" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+            <state relative-caret-position="333">
+              <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -248,12 +242,12 @@
       <updated>1530122458627</updated>
       <workItem from="1530122462014" duration="1345000" />
       <workItem from="1530321520539" duration="14304000" />
-      <workItem from="1532044928782" duration="4941000" />
+      <workItem from="1532044928782" duration="5260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37511000" />
+    <option name="totallyTimeSpent" value="37830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -541,8 +535,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/LastCallEats.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="120" column="29" lean-forward="true" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+        <state relative-caret-position="333">
+          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding />
         </state>
       </provider>
