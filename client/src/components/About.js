@@ -15,7 +15,7 @@ export default class About extends Component {
 
             <div>
             <Grid>
-            <Col  xs={8} sm={8} smOffest={2}>
+            <Col  xs={6} sm={8} smOffest={2}>
             <Modal />
             <Image src="assets/michelle_about.jpeg" circle className="profile-pic" />
             <div>
