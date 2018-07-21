@@ -11,4 +11,10 @@
 
 #collapsible-panel-example-3 {
     background-color: purple !important;
+    color: #229988 !important;
+}
+
+
+.control-label {
+    color: orange !important;
 }

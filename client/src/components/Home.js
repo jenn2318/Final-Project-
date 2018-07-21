@@ -30,7 +30,7 @@ export default class Home extends Component {
 
                 <Button bsStyle="primary" onClick={this.logout.bind(this)}>Logout</Button>
                     <ButtonGroup>
-                <Button bsStyle="primary" onClick={this.goTo.bind(this, "about")}>What We Do</Button></ButtonGroup>
+                <Button bsStyle="primary" onClick={this.goTo.bind(this, "about")}>My Account Info</Button></ButtonGroup>
                     <ButtonGroup>
                  <Button bsStyle="primary" onClick={this.goTo.bind(this, "lastcalleats")}>Find Food Near Me</Button></ButtonGroup></ButtonToolbar></div>
 
