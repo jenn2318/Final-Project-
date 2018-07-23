@@ -11,6 +11,7 @@ Users can click on the login button from the home page to access their account. 
 
 ![user authenticated](client/public/assets/user_authenticated.jpeg)
 
+![user verified by Auth0](client/public/assets/user_verified.jpeg)
 
 
 ## Group Members
