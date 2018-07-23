@@ -40,10 +40,12 @@ Docker
 
 4. Future Additions
 
-![locate restaurants](client/public/assets/lastcall_lastpage.jpeg)
 
 ## 1. Concept
 The concept came about after brainstorming on the idea of what would be very useful in a restaurant app. Also how the restaurant app would be different and what problem would this app solve. So we came up with LastCall to address solving the problem of finding restaurants open late without having to travel too far out of your comfort zone. While brainstorming the type of users who would use this app, we thought about the countless number of times we knew someone who always wanted to find food after late events and even finding ourselves in that situation. We thought it would be a great idea to have an application that could locate restaurants within a 3 to 5 mile radius which would offer close possibilities without a person traveling too far out of their way which can be frustrating and waste time.
+
+![locate restaurants](client/public/assets/lastcall_lastpage.jpeg)
+
 
 ## 2. Initial Planning
 
