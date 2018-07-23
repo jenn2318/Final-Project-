@@ -50,7 +50,6 @@
 //
 // export default App;
 //
-
 import React, { Component } from 'react';
 // import './App.css';
 
@@ -76,6 +75,7 @@ class App extends Component {
 
                         <button
                             bsStyle="primary"
+
                             className="btn-margin"
                             onClick={this.goTo.bind(this, 'home')}
                         >
