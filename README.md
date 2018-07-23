@@ -13,11 +13,9 @@ Users can click on the login button from the home page to access their account. 
 
 ### User Authentication: Auth0
 
-![Auth0](client/public/assets/Auth0_verification.jpeg)
-
 After the user is authenticated, they will have access to their account. Here they can choose the preferences of their favorite event venues and their favorite restaurants.
 
-![user verified by Auth0](client/public/assets/user_verified.jpeg)
+
 
 
 ## Group Members
