@@ -3,7 +3,7 @@
 
 LastCall is an application that gives users suggestions for restaurants open late after a sporting event, concert, or a late evening at a bar or club. Users can create a profile based on their preferences and restaurants they frequently visit. 
 
-![home page when user not authenticated](public/assets/user_notlogged.jpeg)
+![home page when user not authenticated](assets/user_notlogged.jpeg)
 
 
 # Application Use
