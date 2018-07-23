@@ -11,8 +11,8 @@ Users can click on the login button from the home page to access their account. 
 
 ![user authenticated](client/public/assets/user_authenticated.jpeg)
 
-### User Authentication Feature
-* Auth0
+### User Authentication 
+Auth0
 
 ![Auth0](client/public/assets/Auth0_verification.jpeg)
 
