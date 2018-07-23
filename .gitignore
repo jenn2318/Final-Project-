@@ -24,3 +24,5 @@ yarn-error.log*
 .DS_Store
 */.idea
 package-lock.json
+
+ ../.idea/workspace.xml
