@@ -9,8 +9,8 @@ LastCall is an application that gives users suggestions for restaurants open lat
 # Application Use
 Users can click on the login button from the home page to access their account. Once a user is logged in, they can click on Account Information or Find Food Near Me. In the Account Information page, the user can set their favorite restaurants, send feedback or ask questions and set their favorite locations.In the Find Food Near Me section, the user can enter their zip code to find restaurants close to the event they are attending in which map will provide them with location details.
 
-![user authenticated](public/assets/user_authenticated.jpeg)
-![user profile when authenticated](public/assets/user_profilelc.jpeg)
+![user authenticated](client/public/assets/user_authenticated.jpeg)
+![user profile when authenticated](client/public/assets/user_profilelc.jpeg)
 
 
 ## Group Members
@@ -40,7 +40,7 @@ Docker
 
 4. Future Additions
 
-![locate restaurants](public/assets/lastcall_lastpage.jpeg)
+![locate restaurants](client/public/assets/lastcall_lastpage.jpeg)
 
 ## 1. Concept
 The concept came about after brainstorming on the idea of what would be very useful in a restaurant app. Also how the restaurant app would be different and what problem would this app solve. So we came up with LastCall to address solving the problem of finding restaurants open late without having to travel too far out of your comfort zone. While brainstorming the type of users who would use this app, we thought about the countless number of times we knew someone who always wanted to find food after late events and even finding ourselves in that situation. We thought it would be a great idea to have an application that could locate restaurants within a 3 to 5 mile radius which would offer close possibilities without a person traveling too far out of their way which can be frustrating and waste time.
