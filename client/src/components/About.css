@@ -13,6 +13,8 @@
     background-color: orange !important;
     color: #229988 !important;
     width: 70% !important;
+    margin-top: 15px !important;
+    margin: auto;
 }
 
 
@@ -23,12 +25,13 @@
 .box-color {
     background-color: black;
     text-align: center;
+    padding: 2px;
 
 }
 
 #image-box {
     background-color: navy;
-    padding: 40px;
+    padding: 25px;
 }
 
 #member-info {
