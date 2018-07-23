@@ -10,7 +10,7 @@ LastCall is an application that gives users suggestions for restaurants open lat
 Users can click on the login button from the home page to access their account. Once a user is logged in, they can click on Account Information or Find Food Near Me. In the Account Information page, the user can set their favorite restaurants, send feedback or ask questions and set their favorite locations.In the Find Food Near Me section, the user can enter their zip code to find restaurants close to the event they are attending in which map will provide them with location details.
 
 ![user authenticated](client/public/assets/user_authenticated.jpeg)
-![user profile when authenticated](client/public/assets/user_profilelc.jpeg)
+
 
 
 ## Group Members
