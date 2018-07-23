@@ -11,7 +11,9 @@ Users can click on the login button from the home page to access their account. 
 
 ![user authenticated](client/public/assets/user_authenticated.jpeg)
 
-## User Verfied by Auth0
+### User Authentication: Auth0
+
+![Auth0](client/public/assets/Auth0_verification.jpeg)
 
 After the user is authenticated, they will have access to their account. Here they can choose the preferences of their favorite event venues and their favorite restaurants.
 
@@ -47,7 +49,7 @@ Docker
 
 
 ## 1. Concept
-The concept came about after brainstorming on the idea of what would be very useful in a restaurant app. Also how the restaurant app would be different and what problem would this app solve. So we came up with LastCall to address solving the problem of finding restaurants open late without having to travel too far out of your comfort zone. While brainstorming the type of users who would use this app, we thought about the countless number of times we knew someone who always wanted to find food after late events and even finding ourselves in that situation. We thought it would be a great idea to have an application that could locate restaurants within a 3 to 5 mile radius which would offer close possibilities without a person traveling too far out of their way which can be frustrating and waste time.
+The concept came about after brainstorming on the idea of creative uses for a restaurant application. As well as how the differences and what problem would this app solve. So we came up with LastCall to address solving the problem of finding restaurants open late, after late events without having to travel too far out of your comfort zone. While brainstorming the type of users who would use this app, we thought about the countless number of times we knew someone who always wanted to find food after late events, and even finding ourselves in that situation. We thought it would be a great idea to have an application that could locate restaurants within a 3 to 5 mile radius which would offer close possibilities without a person traveling too far out of their way which can be frustrating and waste time.
 
 ![locate restaurants](client/public/assets/lastcall_lastpage.jpeg)
 
