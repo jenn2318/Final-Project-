@@ -1,6 +1,6 @@
 
 module.exports = {
-  Parking: require("./parking")
+  Parking: require("./restaurant")
 };
 
 // module.exports = {

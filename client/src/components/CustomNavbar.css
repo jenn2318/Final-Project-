@@ -9,6 +9,10 @@ nav.navbar, navbar-default {
     border-radius: 0;
 }
 
+.not-logged {
+    padding: 20px;
+}
+
 
 .navbar-default .navbar-nav > li > a {
     color: navy;
