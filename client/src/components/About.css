@@ -22,7 +22,8 @@
 
 .box-color {
     background-color: black;
-    padding: 2px;
+    text-align: center;
+
 }
 
 #image-box {
@@ -35,7 +36,13 @@
     padding: 20px;
 }
 
+.form-box {
+  width: 68%;
+}
 
+.form-group {
+
+}
 
 li {
     color: white !important;
@@ -55,14 +62,14 @@ li {
 }
 
 .profile-pic {
-    width: 32%;
+    width: 31%;
 }
 
 .profile-hero {
     background-attachment: scroll;
     background-image: url('../assets/atl_ga.jpeg');
     margin-top: -20px;
-    height: 142vh;
+    height: 149vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
