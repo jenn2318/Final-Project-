@@ -44,7 +44,7 @@ export default class CustomNavBar extends Component {
         {!isAuthenticated()
                ? <Grid>
             <Jumbotron>
-            <h2>Login to LastCall Eats</h2>
+            <h2>Welcome to LastCall Eats</h2>
         <p className="info-small">This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
 
         {!isAuthenticated()

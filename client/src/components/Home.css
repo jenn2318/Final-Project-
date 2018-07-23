@@ -36,3 +36,5 @@ body {
 p {
     color: darkgrey !important;
 }
+
+@media (max-width: 400px)

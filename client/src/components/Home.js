@@ -21,8 +21,8 @@ export default class Home extends Component {
             <Grid>
         {isAuthenticated()?
          <Jumbotron>
-            <h2>Welcome to LastCall</h2>
-        <p className="info-small">This Application that will give  suggestions for Bars and Restaurants Open Late Night After An Event </p>
+            <h2>Good Evening Michelle Campbell...</h2>
+        <p className="info-small">We have updated some suggestions for Late Night Bars and Restaurants In Your Area.</p>
 
                 {isAuthenticated()
             ? <div>
@@ -45,12 +45,12 @@ export default class Home extends Component {
             <Col sx={12} sm={4} className="container-wrapper">
             <Image src="assets/burger.jpeg" circle className="profile-pic" />
             <h3>Buy Quick Bites</h3>
-        <p>If you want more of an on the go quick meal to satisfy your hunger</p>
+        <p>If you want more of an on the go quick meal to satisfy time</p>
         </Col>
         <Col sx={12} sm={4} className="container-wrapper">
             <Image src="assets/gourmet1.jpeg" circle className="profile-pic" />
             <h3>Give Me Gourmet</h3>
-        <p>If you want more of a home cooked feel to feed your appetite</p>
+        <p>Deciding to go with a home cooked feel to feed your appetite</p>
         </Col>
 
         <Col sx={12} sm={4} className="container-wrapper">

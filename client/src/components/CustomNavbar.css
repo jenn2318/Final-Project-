@@ -33,3 +33,5 @@ navbar-default .nvbar-toggle .icon-bar {
 .navbar-default .navbar-brand {
     color: orange;
 }
+
+@media (max-width: 400px)

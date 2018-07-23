@@ -10,15 +10,16 @@ const config = {
 // const milestone1ZipCodeURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=";
 // Import from .env file
 
+const placesByLatAndLong = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=33.7753097,-84.3909888&radius=1500&type=restaurant&key=";
 
 const getPlaceHours = "https://maps.googleapis.com/maps/api/place/details/json?placeid=";
 
 const geolocate = "https://www.googleapis.com/geolocation/v1/geolocate?key=";
 
-const placesByLatAndLong = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=33.7753097,-84.3909888&radius=1500&type=restaurant&key=";
+//const placesByLatAndLong = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=33.7753097,-84.3909888&radius=1500&type=restaurant&key=";
 
 export default {
-    //Parking deck information
+    //Restaurant information
 
     getParking: function() {
         return axios.get("/api/parking");
