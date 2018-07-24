@@ -11,6 +11,7 @@
 .profile-pic {
     width: 50%;
     margin-top: 2em;
+
 }
 
 .btn-primary {
@@ -37,4 +38,7 @@ p {
     color: darkgrey !important;
 }
 
-@media (max-width: 400px)
+
+
+
+

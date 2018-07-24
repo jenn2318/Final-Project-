@@ -37,21 +37,21 @@ export default class Home extends Component {
 
             </Jumbotron>
                     : null}
-            <Image src="assets/late_night_dt.jpeg" className="header-image" />
+            <Image src="assets/late_night_dt.jpeg" className="header-image" style={{"width":"72vw"}}/>
 
         <Row className="show-grid text-center">
             <Col sx={12} sm={4} className="container-wrapper">
-                <Image src="assets/burger.jpeg" circle className="profile-pic" />
+                <Image src="assets/burger.jpeg" circle className="profile-pic" /> <h4>QB</h4>
                     <h3>Buy Quick Bites</h3>
                     <p>If you want more of an on the go quick meal to satisfy time</p>
                 </Col>
         <Col sx={12} sm={4} className="container-wrapper">
-            <Image src="assets/gourmet1.jpeg" circle className="profile-pic" />
+            <Image src="assets/gourmet1.jpeg" circle className="profile-pic" /> <h4>GB</h4>
             <h3>Give Me Gourmet</h3>
             <p>Deciding to go with a home cooked feel to feed your appetite</p>
         </Col>
         <Col sx={12} sm={4} className="container-wrapper">
-            <Image src="assets/tapas3.jpeg" circle className="profile-pic" />
+            <Image src="assets/tapas3.jpeg" circle className="profile-pic" />  <h4>TB</h4>
             <h3>Try Some Tapas</h3>
             <p>Here you can choose lighter options that are small but pleasing</p>
         </Col>
