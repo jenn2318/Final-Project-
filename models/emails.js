@@ -22,9 +22,9 @@ const emailsSchema =  new Schema({
 
 
 });
-//
+
 const emails = mongoose.model("emails", emailsSchema);
-//
+
 
 module.exports = emails;
 

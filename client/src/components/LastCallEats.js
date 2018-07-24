@@ -120,7 +120,7 @@ render() {
     <Row>
             <Col xs={12} sm={6} className="main-section">
                 <h2>Food Selections</h2>
-                <p>Here are some great selections based on your favortie foods: Please choose some below</p>
+                <p>Choose some great restaurants based on your favortie event locations. Please enter your zip code below.</p>
             <form>
             <input className={"input-field"}
             value={this.state.zipCode}
@@ -143,10 +143,11 @@ render() {
             </form>
 
     </Col>
+
     <Col xs={12} sm={6} className="sidebar-section">
-        <h2> LastCall Mission</h2>
-    <p> We want to be your number one late night food app in Atlanta. We offer selections without you having to do extended searches for food accommodations. We want to provide great service to everyone and great experiences.</p>
-    </Col>
+        <h2> LastCall's Mission</h2>
+        <p> We want to be your number one late night food app in Atlanta. We offer selections without you having to do extended searches for food accommodations. We want to provide great service to everyone and great experiences.</p>
+        </Col>
     </Row>
 
     <Row>
@@ -166,7 +167,7 @@ render() {
     onClick={this.markerClick}
 >
 <InfoWindow >
-    <div>What's this?</div>
+    <div>You are here!</div>
     </InfoWindow>
 
     </Marker>
@@ -181,7 +182,6 @@ render() {
     onClick={clickOneSpecificMarker}
     // For title, hover over a marker. You will see the info from oneZipAtATime.name
     // Try title = {JSON.stringify(oneZipAtATime)} and you should see ALL the data
-    // from oneZipAtATime. Just giving yall some direction/ideas on what you can do
     title = {oneZipAtATime.name}
     />
     )
@@ -189,13 +189,13 @@ render() {
 )})
 </GoogleMap>
 : null}
-        </Col>
-    </Row>
-</Grid>
-    </div>
+            </Col>
+        </Row>
+    </Grid>
+</div>
 
 
-)
-}
+        )
+    }
 
 }
