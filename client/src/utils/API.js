@@ -24,15 +24,15 @@ export default {
     getParking: function() {
         return axios.get("/api/parking");
     },
-    // Gets restaurant by id
+    // Gets parking by id
     getParkingById: function(id) {
         return axios.get("/api/parking/:_id");
     },
     // Deletes Parking
-    deleteRestaurant: function(id) {
+    deleteParking: function(id) {
         return axios.delete("/api/parking/:_id");
     },
-    // Saves Parking
+    // Saves a parking deck to the database
     saveParking: function(parkingData) {
         return axios.post("/api/parking", parkingData);
 

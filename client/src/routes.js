@@ -27,18 +27,17 @@ export const makeMainRoutes = () => {
         <div>
             {/*<Route path="/" render={(props) => <App auth={auth} {...props} />} />*/}
         <Route path="/" render={(props) => < CustomNavbar auth={auth} {...props} />} />
-
-    <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
-            <Route path="/About" render={(props) => <About auth={auth} {...props} />} />
-           <Route path="/LastCallEats" render={(props) => <LastCallEats auth={auth} {...props} />} />
-            <Route path="/callback" render={(props) => {
+            <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
+                <Route path="/About" render={(props) => <About auth={auth} {...props} />} />
+                   <Route path="/LastCallEats" render={(props) => <LastCallEats auth={auth} {...props} />} />
+                        <Route path="/callback" render={(props) => {
                 handleAuthentication(props);
                 return <Callback {...props}/>
 
-            }}/>
-        </div>
-    <Footer   />
-        </div>
-    </Router>
-);
+                        }}/>
+                    </div>
+                <Footer   />
+            </div>
+        </Router>
+    );
 }

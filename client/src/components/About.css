@@ -66,6 +66,10 @@ li {
 
 .profile-pic {
     width: 31%;
+    max-width: 200px;
+    display: block;
+    margin-left: 50px;
+    margin-top: 58px;
 }
 
 .profile-hero {
@@ -77,4 +81,26 @@ li {
     background-size: 100% 100%;
 }
 
-@media (max-width: 400px) {}
+#feedbackForm {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/*@media screen and (max-width: 400px) {}*/
+/*
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4></div>
+        <div class="col-xs-12 col-md-4></div>
+        <div class="col-xs-12 col-md-4 hidden-xs></div>
+    </div>
+</div>
+*/
+/*Small devices (tablets, 768px and up)*/
+@media (min-width: @screen-sm-min) { }
+
+/*Medium devices (desktops, 992px and up)*/
+@media (min-width: @screen-md-min) { }
+
+/*Large devices (large desktops, 1200px and up)*/
+@media (min-width: @screen-lg-min) { }

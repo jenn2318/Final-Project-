@@ -5,7 +5,7 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 const proxy = require('http-proxy-middleware');
-//Parking = require('./models/parking');
+
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -14,23 +14,19 @@ app.use(bodyParser.json());
 if (process.env.NODE_ENV === "production") {
  app.use(express.static("client/build"));
 }
-// Add routes, both API and view
+
 app.use('/',routes);
 app.use('/', proxy({target:"localhost:3001",changeOrigin:true}))
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/parking",
+  process.env.MONGODB_URI || "mongodb://localhost/emails",
   {
     useMongoClient: true
   }
 );
 
-// app.get('/*', (req, res, next) => {
-//     res.sendFile(path.join(_ dirname, '..', 'client', 'build',
-//     'index.html'));
-// };
 
 // Start the API server
 app.listen(PORT, function() {

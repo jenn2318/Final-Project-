@@ -26,14 +26,6 @@ const Schema = mongoose.Schema;
             required: true
         },
 
-//   location: { type: String, required: true },
-//   rating: { type: String },
-//   price: { type: String },
-//   businessHours: { type: String },
-//   eventPricing: { type: String },
-//   zipCode: { type: String },
-//
-//
  });
 //
  const lastCall = mongoose.model("Restaurant", restaurantSchema);

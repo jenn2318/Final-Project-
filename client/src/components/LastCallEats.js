@@ -7,12 +7,11 @@ import { Marker, InfoWindow } from "react-google-maps";
 
 export default class LastCallEats extends Component {
     state= {
-        dbParking: [],
+        dbRestaurant: [],
         zipCode: "",
-        books: [],
-        title: "",
-        author: "",
-        synopsis: "",
+        phone: "",
+        address: "",
+        rating: "",
         isMarkerShown: true,
         zipResults: [],
         showMapWithMarkers: false,
@@ -116,10 +115,10 @@ render() {
 
     return (
         <div className='last-call-hero'>
-        // I<mage src="assets/atl_ga.jpeg" className="header-image" />
+        {/*I<mage src="assets/atl_ga.jpeg" className="header-image" />*/}
         <Grid>
     <Row>
-            <Col xs={6} sm={6} className="main-section">
+            <Col xs={12} sm={6} className="main-section">
                 <h2>Food Selections</h2>
                 <p>Here are some great selections based on your favortie foods: Please choose some below</p>
             <form>
@@ -144,7 +143,7 @@ render() {
             </form>
 
     </Col>
-    <Col xs={6} sm={6} className="sidebar-section">
+    <Col xs={12} sm={6} className="sidebar-section">
         <h2> LastCall Mission</h2>
     <p> Here is why we want to be your number one late night food app in Atlanta. We offer selections without you having to search high and low.</p>
     </Col>
@@ -185,57 +184,16 @@ render() {
     // from oneZipAtATime. Just giving yall some direction/ideas on what you can do
     title = {oneZipAtATime.name}
     />
-)
+    )
 }
 )})
 </GoogleMap>
 : null}
         </Col>
     </Row>
-    </Grid>
+</Grid>
     </div>
-    // {this.state.showMapWithMarkers === true
-    //     ?
-    // <GoogleMap
-    //     isMarkerShown={this.state.isMarkerShown}
-    //     centerLat={ this.state.centerLat }
-    //     centerLong={this.state.centerLng }
-    // >
-    //
-    // <Marker
-    //     position={{lat:this.state.centerLat,lng:this.state.centerLng}}
-    //     label = "You"
-    //     title = "Test Title"
-    //     onClick={this.markerClick}
-    // >
-    // <InfoWindow >
-    // <div>What's this?</div>
-    // </InfoWindow>
-    //
-    // </Marker>
-    //
-    //     {/* With .map , you are looping through the array of 20 results that is stored in this.state.zipResults */}
-    //     ({this.state.zipResults.map(oneZipAtATime => {
-    //         // For every result in the array, you want to assign the markerClick function AND attach (bind) the data (oneZipAtATime) associaited with that specific result
-    //         let clickOneSpecificMarker = this.markerClick.bind(this,oneZipAtATime);
-    //     return(
-    //         <Marker
-    //     position={{ lat: oneZipAtATime.geometry.location.lat, lng: oneZipAtATime.geometry.location.lng }}
-    //     onClick={clickOneSpecificMarker}
-    //     // For title, hover over a marker. You will see the info from oneZipAtATime.name
-    //     // Try title = {JSON.stringify(oneZipAtATime)} and you should see ALL the data
-    //     // from oneZipAtATime. Just giving yall some direction/ideas on what you can do
-    //     title = {oneZipAtATime.name}
-    //     />
-    // )
-    // }
-    // )})
-    // </GoogleMap>
-    // : null}
-// </Col>
-//     </Row>
-//     </Grid>
-//     </div>
+
 
 )
 }

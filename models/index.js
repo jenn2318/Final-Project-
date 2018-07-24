@@ -1,9 +1,9 @@
-
+const emails = require('./emails')
+console.log('=======================')
+console.log('In emails model index')
+console.log('=======================')
 module.exports = {
-  Parking: require("./restaurant")
+  Emails: emails
 };
 
-// module.exports = {
-//   Restaurant: require("./restaurant")
-// };
 

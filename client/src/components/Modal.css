@@ -6,10 +6,11 @@
 /*}*/
 
 .modal-container {
-    background-color: #229988 !important;
+
 width: 10px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    padding-top: 30px;
+    margin-left: 20px;
 
 }
 
