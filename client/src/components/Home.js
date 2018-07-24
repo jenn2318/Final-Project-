@@ -22,45 +22,41 @@ export default class Home extends Component {
         {isAuthenticated()?
          <Jumbotron>
             <h2>Good Evening Michelle Campbell...</h2>
-        <p className="info-small">We have updated some suggestions for Late Night Bars and Restaurants In Your Area.</p>
+                <p className="info-small">We have updated some suggestions for Late Night Bars and Restaurants In Your Area.</p>
 
                 {isAuthenticated()
             ? <div>
                     <ButtonToolbar>
+                        <Button bsStyle="primary" onClick={this.logout.bind(this)}>Logout</Button>
+                            <ButtonGroup>
+                        <Button bsStyle="primary" onClick={this.goTo.bind(this, "about")}>My Account Info</Button></ButtonGroup>
+                            <ButtonGroup>
+                         <Button bsStyle="primary" onClick={this.goTo.bind(this, "lastcalleats")}>Find Food Near Me</Button></ButtonGroup></ButtonToolbar></div>
 
-                <Button bsStyle="primary" onClick={this.logout.bind(this)}>Logout</Button>
-                    <ButtonGroup>
-                <Button bsStyle="primary" onClick={this.goTo.bind(this, "about")}>My Account Info</Button></ButtonGroup>
-                    <ButtonGroup>
-                 <Button bsStyle="primary" onClick={this.goTo.bind(this, "lastcalleats")}>Find Food Near Me</Button></ButtonGroup></ButtonToolbar></div>
-
-                : <Button bsStyle="primary" onClick={this.login.bind(this)}>Login</Button>}
-
-
+                        : <Button bsStyle="primary" onClick={this.login.bind(this)}>Login</Button>}
 
             </Jumbotron>
                     : null}
             <Image src="assets/late_night_dt.jpeg" className="header-image" />
-            <Row className="show-grid text-center">
+
+        <Row className="show-grid text-center">
             <Col sx={12} sm={4} className="container-wrapper">
-            <Image src="assets/burger.jpeg" circle className="profile-pic" />
-            <h3>Buy Quick Bites</h3>
-        <p>If you want more of an on the go quick meal to satisfy time</p>
-        </Col>
+                <Image src="assets/burger.jpeg" circle className="profile-pic" />
+                    <h3>Buy Quick Bites</h3>
+                    <p>If you want more of an on the go quick meal to satisfy time</p>
+                </Col>
         <Col sx={12} sm={4} className="container-wrapper">
             <Image src="assets/gourmet1.jpeg" circle className="profile-pic" />
             <h3>Give Me Gourmet</h3>
-        <p>Deciding to go with a home cooked feel to feed your appetite</p>
+            <p>Deciding to go with a home cooked feel to feed your appetite</p>
         </Col>
-
         <Col sx={12} sm={4} className="container-wrapper">
             <Image src="assets/tapas3.jpeg" circle className="profile-pic" />
             <h3>Try Some Tapas</h3>
-        <p>Here you can choose lighter options that are small but pleasing</p>
+            <p>Here you can choose lighter options that are small but pleasing</p>
         </Col>
-        </Row>
-
-        </Grid>
+    </Row>
+</Grid>
 
 
 

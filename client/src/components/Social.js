@@ -8,8 +8,7 @@ export default class Social extends Component {
 
         return (
             <div className="social-box">
-            < SocialIcon url="https://www.instagram.com/lastcalleatsatl/" />
-            < SocialIcon url="https://twitter.com/JPCoder777" />
+                < SocialIcon url="https://www.instagram.com/lastcalleatsatl/" />
             </div>
 
 
