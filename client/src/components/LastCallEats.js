@@ -145,7 +145,7 @@ render() {
     </Col>
     <Col xs={12} sm={6} className="sidebar-section">
         <h2> LastCall Mission</h2>
-    <p> Here is why we want to be your number one late night food app in Atlanta. We offer selections without you having to search high and low.</p>
+    <p> We want to be your number one late night food app in Atlanta. We offer selections without you having to do extended searches for food accommodations. We want to provide great service to everyone and great experiences.</p>
     </Col>
     </Row>
 
